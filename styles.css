@@ -11,7 +11,7 @@ body,p,ul,li{
     align-items: center;
 }
 .secondContainer{
-    max-width: 60%;
+    width: 45%;
     border-radius: 5px;
     box-shadow: 1px 1px 10px grey
 }
@@ -26,8 +26,7 @@ body,p,ul,li{
 }
 .intro p{
     color: #C2C7CD;
-    margin: 5px;
-    padding: 0;
+    margin-bottom: 5px;
 }
 .detailsContainer{
     display: flex;
@@ -59,7 +58,7 @@ body,p,ul,li{
 .detailsContainer .detailsColumn1 .buttonContainer button{
     background-color: hsl(71, 73%, 54%);
     height: 50px;
-    width: 90%;
+    width: 100%;
     border: #40B590 1px solid;
     box-shadow: -5px 5px 40px grey;
     border-radius: 5px;
@@ -82,10 +81,25 @@ body,p,ul,li{
     margin-bottom: 7%;
 }
 .detailsContainer .detailsColumn2 li{
-    margin: 1.5%;
+    margin: 1.5% 0;
     color: #99E5EB;
     list-style: none;
 }
 .detailsContainer .detailsColumn2 .detailsColumn2Container{
     padding: 10%;
 }
+
+/* mobile view */
+
+@media only screen and (max-width: 800px) {
+    .mainContainer{
+        height: 100%;
+    }
+    .secondContainer{
+        width: 80%;
+        margin: 10% 0;
+    }
+    .detailsContainer{
+        flex-direction:column;
+    }
+  }
